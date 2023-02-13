@@ -34,7 +34,6 @@ object CatsMonad {
 
   def main(args: Array[String]): Unit = {
     import cats.instances.option._
-
     println(retryTailRecM(100000)(a => if (a == 0) None else Some(a - 1)))
   }
 }
