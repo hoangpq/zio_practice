@@ -9,7 +9,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "dev.zio" %% "zio" % "2.0.5",
       "dev.zio" %% "zio-test" % "2.0.5" % Test,
-      "org.typelevel" %% "cats-core" % "2.1.0"
+      "org.typelevel" %% "cats-core" % "2.1.0",
+      "org.typelevel" %% "cats-effect" % "3.4.6"
     ),
     scalacOptions ++= Seq(
       "-Xfatal-warnings",
